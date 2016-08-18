@@ -6,6 +6,7 @@ from sklearn.linear_model import LinearRegression
 import matplotlib.pyplot as plt
 from matplotlib import style
 
+# requires the following package: python-cairo-1.10.0-6
 style.use('ggplot')
 
 quandl.ApiConfig.api_key = '9zzyyCq7gX22TzUcqt9w'
