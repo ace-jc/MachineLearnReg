@@ -44,7 +44,7 @@ X_train, X_test, y_train, y_test = cross_validation.train_test_split(X, y, test_
 clf = LinearRegression(n_jobs=-1) #using all cores with -1
 clf.fit(X_train, y_train) #synonymous with train
 accuracy = clf.score(X_test, y_test)  #synonymous with test
-#print(accuracy)
+print(accuracy)
 forecast_set = clf.predict(X_lately)
 print(forecast_set, accuracy, forecast_out)
 df['Forecast'] = np.nan
